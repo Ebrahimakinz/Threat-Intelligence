@@ -1,170 +1,88 @@
 <h1>Cybersecurity Incident Management</h1>
 
-## SThreat Intelligence & Adversary Profiling
+## Threat Intelligence & Adversary Profiling
 
 ### Project Context:
 
-The CRC, part of the global Movement, delivers critical humanitarian services including disaster response, blood donation services, and family reunification for people affected by conflict and natural disasters. In support of these services, the organization collects and processes highly sensitive personal data related to donors, volunteers, beneficiaries, refugees, and missing persons. Trust, neutrality, and ethical stewardship of data are foundational to the organization’s mission. To enhance service delivery and operational efficiency, the CRC is actively expanding its digital footprint through the use of AI-enabled systems and advanced digital platforms. While these technologies accelerate humanitarian aid, they simultaneously broaden the organization’s attack surface and increase its cyber risk exposure.
+The goal of this deliverable was to simulate a mission-critical task performed by Threat Intelligence Analysts and Incident Response teams: the systematic deconstruction of a sophisticated, real-world adversary. By profiling the behaviours, motivations, and technical methodologies of APT29 (Cozy Bear), this report provides the foundational intelligence required to build proactive and resilient organizational defences. <br />
+This deliverable showcases my proficiency in converting open-source intelligence (OSINT) into a structured defensive strategy. By bridging the gap between who the actor is and how they operate, I provide leadership with the 'why' behind necessary security investments.
+
 <br />
 <p align="center">
-The humanitarian sector has become a high-value target for sophisticated threat actors, including state-sponsored groups and cybercriminals. The urgency of this project was underscored by the 2022 International Committee of the Red Cross (ICRC) data breach, which compromised the sensitive information of over 500,000 vulnerable individuals. For the CRC, a cybersecurity failure is not merely a technical issue; it is a humanitarian risk that can lead to severe ethical breaches, loss of life-saving trust, and significant reputational damage.
+ Technical Snapshot: APT29 Tactical Mapping
 <br/>
-<img src="https://imgur.com/3E5KIy9.png" height="80%" width="80%" alt="Risk Matrix"/>
+<img src="https://imgur.com/rhc8UJR.png" height="80%" width="80%" alt="Tactics"/>
 <br />
 
-In response to the escalating cyber threats facing the humanitarian sector, this engagement delivered a comprehensive Cybersecurity and GRC Transformation for the Canadian Red Cross. By bridging the gap between technical requirements and humanitarian values, the project established a three-year strategic roadmap that prioritized the protection of highly sensitive data—including records for refugees and disaster victims. Key achievements included a 30% reduction in the organization’s digital attack surface through data minimization, the implementation of a specialized Incident Response Plan for field operations, and the creation of the organization’s first Ethical AI Governance Framework. The result was a resilient security posture that ensures technology serves as a safe enabler for life-saving aid.
+### Threat Actor Overview – APT29:
+The Russian Foreign Intelligence Service (SVR) is believed to support APT29, a sophisticated and elusive threat group that operates under several aliases, including Cozy Bear, The Dukes, Midnight Blizzard, and Nobelium. APT29 is an intelligence-gathering, nation-state-sponsored actor. By obtaining sensitive information from foreign governments, organizations, and individuals, their operations seek to further Russian geopolitical interests. 
+
+Although they have been active since at least 2008, they rose to prominence in 2014 after allegedly carrying out a string of targeted attacks on prominent locations, such as the Democratic National Committee, the US White House, and the Department of State.
+
+To support Russia’s strategic goals on the international scene, APT29 engage in espionage to gather intelligence on defense, economic, and foreign policy issues. They concentrate on gaining long-term, covert access to target networks for ongoing intelligence collection. 
+
+They are frequently confused with Fancy Bear (also known as APT28), another well-known Russian hacking group. Threat intelligence reports, on the other hand, have continuously pointed out significant variations in their tactics, techniques, and procedures (TTPs), pointing to different operational goals and approaches.
 
 
-### Project Objectives (My Role):
-The goal of this engagement was to design a structured Cybersecurity and GRC framework tailored to the unique needs of a non-profit entity. The approach focused on balancing rigorous security controls with the organization's humanitarian values and inherent resource constraints, ensuring that digital transformation does not compromise the safety of the people the CRC serves. The core scope included:
+#### Target Profile &MITRE ATT&CK Mapping:
+APT29’s operations have been observed globally to exhibits preference for organizations involved in foreign policy and international and entities engaged in research and development that can provide strategic insights into geopolitical developments.
 
-GRC Maturity Assessment: Evaluating current policies against international standards while accounting for the unique operational needs of a non-profit.
+They frequently target research institutes, think tanks, and government networks in North America, Asia, Europe, and NATO member nations. The actor searches for sensitive data kept in these organizations' networks and for different people engaged in defence and geopolitical research. 
 
-AI Governance Framework: Establishing guardrails for the ethical use of AI in service delivery and disaster response.
+Over the years, the team has shown incredible perseverance, flexibility, and technical skill while being at the vanguard of significant cyber incidents. Their campaigns, which frequently aim to steal sensitive data, have targeted a wide range of organizations, including critical infrastructure, private companies, and government agencies.
 
-Incident Response Strategy: Developing a specialized response plan that prioritizes the safety of vulnerable populations during a data breach.
-
-#### Methodology:
-A four-phased approach was utilized to ensure that security measures enhanced, rather than hindered, the CRC’s humanitarian mission:
-
-Ethical Discovery & Risk Profiling: Identified the humanitarian impact of data loss to define specific risks to beneficiaries.
-
-Framework Alignment: Mapped the environment against NIST CSF and ISO 27001 to address gaps in access control and third-party risk (crucial for global NGO partnerships).
-
-GRC Policy Optimization: Drafted a suite of GRC policies that focused on Data Minimization—ensuring the CRC only collects what is necessary for service delivery. This reduced the "target value" of the organization’s databases. I also integrated AI Ethics into the IT governance structure to ensure automated systems do not inadvertently bias aid distribution.
-
-Strategic Roadmap: Delivered a tiered implementation plan that prioritized immediate "quick wins" while accounting for non-profit resource constraints.
+APT29 employs a range of tactics and techniques as defined in the MITRE ATT&CK framework. Below are three tactics with associated techniques and real-world applications:
 
 </p>
 
 <h2>Tools and Utilities Used</h2>
 
-- <b>Interviews, Google Docs, MS Excel, MS Project, COBIT 2019 Framework, NIST CSF 2.0, ISO 27001, PIPEDA, GDPR, MS PowerPoint </b> 
+- <b>Open-Source Intelligence (OSINT) gathering, MITRE ATT&CK Matrix </b> 
 
-<h2>Key Challenges & Strategic Solutions</h2>
-<b>Navigating the intersection of humanitarian aid and high-level cybersecurity presented several unique hurdles. Here is how I addressed them:</b>
-
-- Resource Constraints: Maximized ROI by applying a "Risk-First" approach, utilizing open-source frameworks and low-cost/high-impact controls (like MFA) to protect critical refugee databases without diverting funds from frontline aid.<br />
-- Operational Accessibility: Humanitarian workers often operate in disaster zones with poor connectivity and a need for rapid data access. Overly restrictive security protocols can hinder life-saving work. I implemented Context-Aware Governance. This meant designing security policies that were flexible enough for field operations (e.g., offline-first secure data entry) but rigid enough to protect the central data core. We shifted the narrative from "Security is a blocker" to "Security is an enabler of trust. Solved the conflict between rigid security and disaster-zone realities through Context-Aware Governance, ensuring security protocols remained flexible for field workers while maintaining a hardened data core.<br />
-- The Trust Gap: Overcame resistance to digital transformation by leading transparency workshops that framed data protection as a digital extension of the humanitarian principle "Do No Harm.<br />
-- Asymmetric Threats: Addressed the risk of state-sponsored targeting by prioritizing resilience and specialized incident response, ensuring encrypted data protection and rapid recovery during humanitarian crises.<br />
-
-The project successfully transitioned the CRC from a reactive security posture to a structured, risk-aware organization
-<h2>Lessons Learned & Strategic Reflections</h2>
-<b>Several key insights were gained during the engagement that will inform future large-scale GRC transformations in the non-profit and humanitarian sectors.</b>
-
-- Mission-Linked Security: Found that linking technical controls directly to the humanitarian mission drives faster adoption; future projects should lead with Humanitarian Impact Assessments. I would introduce "Humanitarian Impact Assessments" even earlier in the process to ensure every security policy is viewed through the lens of beneficiary safety rather than just IT compliance.<br />
-- Agile AI Governance: Recognized that rapid AI evolution requires a "Living Governance" model with quarterly agile reviews rather than static annual policies.<br />
-Prioritizing Field UX: Identified that security must be frictionless for aid workers; future iterations would include "Security UX" testing to ensure protocols don't impede life-saving response times.<br />
-- Automated Third-Party Risk: Learned that manual vendor assessments are a bottleneck for global NGOs, highlighting the need for automated TPRM platforms for real-time risk scoring.<br />
-- Culture as a Core Control: Confirmed that Security Awareness and Culture (SAC) is as vital as technical infrastructure, as the most lasting impact came from a shift in how staff valued data.<br />
-
-<h2>Deliverables:</h2>
-
-### AI Security & Strategic Alignment Policy
-
-The CRC identifies significant opportunities to leverage AI across both frontline services and back-office operations. To ensure these innovations do not compromise the organization’s mission, the following use cases and risk mitigations have been prioritized:
-
-<p align="left">
-Operational Use Cases:
-Public Engagement: Deploying AI chatbots for donor, volunteer, and trainee intake.
-Disaster Response: Utilizing predictive modelling to forecast natural disasters, optimize support center placement, and tailor emergency training.
-Efficiency: Streamlining cloud development through AI coding support and automating marketing content creation.
-  
-<br/>
-Critical AI Security Priorities:
-Data Integrity: Preventing unauthorized access to sensitive donor and patient records.
-Algorithmic Fairness: Ensuring models provide unbiased decisions in healthcare and aid distribution.
-System Resilience: Protecting AI infrastructure from tampering or exploitation by malicious actors
-
-<br />
-Identified Strategic Risks:
-Vulnerability Exposure: Preventing data leaks caused by AI-generated code that may contain errors or security gaps.
-Decision Bias: Mitigating the risk of inappropriate or unethical aid delivery driven by biased data models.
-Advanced Threats: Countering sophisticated actors who use AI to reverse-engineer code or identify "back-door" entries into CRC’s protected systems.
-
-<br />
-
-In terms of compliance requirements, the CRC must adhere to the following regulations to ensure the protection and ethical use of data in AI applications:
-
-● PIPEDA (Personal Information Protection and Electronic Documents Act) - Governs how Canadian private sector organizations handle personal information.<br />
-● PHIPA (Personal Health Information Protection Act): Ontario law that governs the collection and use of personal health information by healthcare providers.<br />
-● CASL (Canada’s Anti-Spam Legislation) regulates the sending of commercial electronic messages and the installation of computer programs without consent.<br />
-● PCI-DSS (Payment Card Industry Standard - Data Security Standard) - Sets out guidelines for managing card payment data.<br />
-<br/>
-</p>
-
+<h2>APT29 Attack Mapping Samples</h2>
 <p align="center">
-<img src="https://imgur.com/MsMVvnd.png" height="80%" width="80%" alt="Policy"/>
+Initial Access: <br/>
+<img src="https://imgur.com/568hVfU.png" height="80%" width="80%" alt="Mitre Att&ck"/>
 <br />
 <br />
-AI Security Guidelines<br/>
-<img src="https://imgur.com/JcRIOVH.png" height="80%" width="80%" alt="Guidelines"/>
+Execution: <br/>
+<img src="https://imgur.com/DUiKb2k.png" height="80%" width="80%" alt="Mitre Att&ck"/>
 <br />
 <br />
-AI Access & Use<br/>
-<img src="https://imgur.com/VlnfoF4.png" height="80%" width="80%" alt="Risk"/>
+Command and Control (C2): <br/>
+<img src="https://imgur.com/5kQpMuC.png" height="80%" width="80%" alt="Mitre Att&ck"/>
 <br />
 <br />
-
+Case Study: SolarWinds Supply Chain Attack: <br/>
+<img src="https://imgur.com/fontuCt.png" height="80%" width="80%" alt="Mitre Att&ck"/>
+<br />
+<br />
+References: <br/>
+<img src="https://imgur.com/pdLGK3I.png" height="80%" width="80%" alt="Mitre Att&ck"/>
+<br />
+<br />
 </p>
 
-<h2>Final Presentation:</h2>
-This final deliverable served as the strategic culmination of the engagement—a comprehensive presentation to the Board of Directors and Executive Leadership. It translated complex technical risks into a prioritized, three-year investment roadmap designed to harden the CRC’s digital perimeter while maintaining its humanitarian mission. The deliverable successfully translated technical vulnerabilities into a mission-critical investment strategy, providing the CRC leadership with the clarity needed to approve a multi-year budget while ensuring that every dollar spent directly protects the vulnerable populations they serve. Recognizing the urgency of the current threat landscape, we identified critical Year 1 initiatives requiring immediate funding.
-
-
-The presentation provided a clear path to maturity by outlining:
-
-Risk-Aligned Initiatives: A suite of targeted security projects directly mapped to the critical risks of data exfiltration, AI bias, and state-sponsored threats.
-
-Strategic Resource Allocation: A realistic assessment of the personnel and financial investment required, tailored to the CRC’s unique non-profit operational model.
-
-Operational Resilience: A phased approach to ensure security enhancements strengthen—rather than disrupt—frontline disaster response and healthcare services.
-
-### Security Inititiaves for Immediate Funding
+<b>Comparative Analysis table showing strategic nuance behind how a APT29 adapts their methods to different target environments.</b>
 <p align="center">
-Project: Config Mgmt Database (CMDB): <br/>
-<img src="https://imgur.com/tH1eB4p.png" height="80%" width="80%" alt="Strategic"/>
-<br />
-<br />
-Project: Identity and Access Mgmt: <br/>
-<img src="https://imgur.com/CK0LqXH.png" height="80%" width="80%" alt="Strategic"/>
-<br />
-<br />
-Project: Managed EDR/SIEM by MSSP: <br/>
-<img src="https://imgur.com/VZPxFvP.png" height="80%" width="80%" alt="Strategic"/>
-<br />
-<br />
-Project: Disaster Response Resilience: <br/>
-<img src="https://imgur.com/obq0fB9.png" height="80%" width="80%" alt="Strategic"/>
-<br />
-<br />
-Project: Third Party Policy: <br/>
-<img src="https://imgur.com/W7gzhSh.png" height="80%" width="80%" alt="Strategic"/>
-<br />
-<br />
-Project: Zero Trust Architecture: 
+Comparative Analysis: SolarWinds vs. Operation Nightingale
 <br/>
-<img src="https://imgur.com/fzg6PsB.png" height="80%" width="80%" alt="Strategic"/>
-<br />
-<br />
-Project: Security Policy Creation: <br/>
-<img src="https://imgur.com/jZq3sVD.png" height="80%" width="80%" alt="Strategic"/>
-<br />
-<br />
-Schedule and Budgeting:<br/>
-<img src="https://imgur.com/urwTYWw.png" height="80%" width="80%" alt="Strategic"/>
+<img src="https://imgur.com/3IbVUN6.png" height="80%" width="80%" alt="Comparative Table"/>
 <br />
 <br />
 </p>
 
-By presenting a structured Gantt chart and milestone-driven plan, we demonstrated how the CRC can move from a reactive security state to a proactive, resilient organization within a three-year window.
-<p align="center"> 
-Cybersecurity Programs Implementation Roadmap <br/>
-<img src="https://imgur.com/YnzMhhy.png" height="80%" width="80%" alt="Operational"/>
-<br />
-<br />
+### Strategic Insights, Reflections and Future Outlook
 
-</p>
+Reflecting on the analysis of APT29 and the dual case studies of SolarWinds and Operation Nightingale, several key insights emerged regarding the evolution of modern cyber governance and threat intelligence.
 
-This deliverable successfully translated technical vulnerabilities into a mission-critical investment strategy, providing the CRC leadership with the clarity needed to approve a multi-year budget while ensuring that every dollar spent directly protects the vulnerable populations they serve. The roadmap prioritizes high-risk projects in Year 1, strengthens defenses and resilience in Year 2, and enhances security posture in Year 3.
+
+- While SolarWinds demonstrated APT29’s ability to conduct a patient, highly technical supply chain attack, Operation Nightingale highlighted their agility in exploiting global crises. Both campaigns share a common DNA: the sophisticated use of trusted channels—whether software updates or reputable cloud providers, to bypass the perimeter.<br />
+- The SolarWinds compromise proved that traditional perimeter defences (firewalls and EDR) are insufficient if the "trusted" software already inside the network is compromised. Future GRC frameworks must prioritize Software Bill of Materials (SBOM) and rigorous third-party vendor assessments to ensure the integrity of the entire digital supply chain.<br />
+- As seen in Operation Nightingale, APT29’s use of Google Drive and Microsoft OneDrive for C2 traffic highlights a critical defensive gap. We must move toward Zero Trust Architecture (ZTA). Trust should never be granted based on a domain's reputation alone; instead, continuous monitoring of behavior within those trusted cloud channels is essential. <br />
+- Despite the high technical sophistication of nation-state actors, they still frequently rely on simple human error (Spear phishing in Nightingale). Security controls must be frictionless. If security protocols are too cumbersome, users will find workarounds, inadvertently creating the "back doors" that actors like APT29 exploit. Investing in a strong Security Culture is as important as the technical stack.<br />
+- The rapid adaptation of APT29 during the COVID-19 pandemic shows that threat actors pivot faster than most annual policy review cycles. Organizations must transition to Agile Governance. Policies regarding AI, cloud access, and remote work must be "living documents" that are updated quarterly based on the latest Threat Intelligence (TI) feeds.<br />
+
+This research underscores that defending against a nation-state adversary is not a 'one-and-done' technical fix. It requires a holistic, intelligence-led strategy that integrates technical rigor with organizational agility and a deep understanding of the human element. By mapping these threats to the MITRE ATT&CK framework, we can transform abstract fears into actionable, prioritized defensive roadmaps.
+
+
