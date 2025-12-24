@@ -1,6 +1,6 @@
 <h1>Cybersecurity Incident Management</h1>
 
-## Incident Report & Disaster Recovery Plan
+## SThreat Intelligence & Adversary Profiling
 
 ### Project Context:
 
